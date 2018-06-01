@@ -1,0 +1,36 @@
+1、分包
+./android_module_4.py            //analyze android make and insert into mysql
+./android_module_deal_4.py       //deal with the items contains more than one class
+./file_rules_4.py                //analyze file_rules in make,insert src_files and src_path into all_module_info_4
+./project_4.py                   //add git into all_module_info_4,treat git as father module
+./frameworks_package_4.py        //add frameworks packages
+./libcore_package_4.py           //add libcore packages
+
+2、版本比对
+
+建立临时表
+./sql_create_fun_4.py            //从index中抽出4.0版本的函数信息，供版本比对时解析函数信息入库使用
+./sql_create_fun_5.py 
+./sql_create_class_4.py
+./sql_create_class_5.py
+./sql_create_file_4.py 
+./sql_create_file_5.py 
+
+原始
+./diff_4_5.py                    //deal with the modules_4
+./diff_4_5_add_5.py              //add module in modules_5 and not in modules_4
+./diff_4_5_add_4.py              //add the same files in 4 and 5
+
+金立
+./diff_4_5_gionee.py             //deal with the modules_4
+./diff_5_4_gionee.py             //add module in modules_5 and not in modules_4
+./sql_into_mysql_gionee.py       //insert sql of gionee into mysql
+
+
+3、顶层模块整理
+./framework_artificial_4.py      //fetch data from haojialiang and deal with item where layer belongs to 'framework'
+./lib_artificial_4.py            //same to up and deal with item where layer belongs to lib
+
+4、模块比对test
+./module_4_only.py
+./module_5_only.py
